@@ -1,0 +1,16 @@
+.part2-homepage {
+    width: unset;
+    height: 605px;
+    overflow: hidden;
+    position: relative;
+}
+.background-image-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.37;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}

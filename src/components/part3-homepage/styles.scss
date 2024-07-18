@@ -1,0 +1,57 @@
+.part3-homepage {
+    width: 100%;
+    height: 430px;
+    background: white;
+    position: relative;
+}
+.part3-wrapper {
+    width: 1169px;
+    height: 362px;
+    position:absolute;
+    left: 150px;
+    top: 34px;
+    // border: 1px solid black;
+}
+.activities-wrapper {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 27px;
+}
+.activity {
+    // background: green;
+    border: 1px solid #BEBEBE;
+    box-shadow: 5px 5px 5px 0px #e9e9e9;
+    border-radius: 50%;
+    width: 272px;
+    height: 276px;
+    display: inline-block;
+    text-align: center;
+
+}
+.activity-heading {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    margin-right: 15px;
+}
+.activity-paragraph {
+    text-align: center;
+    font-family: "Roboto";
+    width: 171px;
+    word-wrap: break-word;
+}
+.activity-paragraph-wrapper {
+    width: 188px;
+    height: max-content;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+.activity-image {
+    text-align: center;
+    margin-top: 27px;
+    height: 70px;
+}

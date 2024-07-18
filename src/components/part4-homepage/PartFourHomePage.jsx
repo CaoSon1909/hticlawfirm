@@ -1,0 +1,108 @@
+import { Divider } from "antd";
+import React from "react";
+import "./styles.scss";
+
+const headingStyle = {
+  color: "white",
+  fontFamily: "Roboto",
+  fontSize: "20px",
+  fontWeight: "500",
+  lineHeight: "23.44px",
+  marginTop: "23px",
+};
+
+const headerStyle = {
+  color: "white",
+  fontFamily: "Roboto",
+  fontSize: "28px",
+  fontWeight: "500",
+  lineHeight: "49px",
+};
+
+const PartFourHomePage = () => {
+  return (
+    <div className="part4-homepage">
+      <img
+        className="bg-image-part4"
+        src="/background-image/bg-image-part4.svg"
+        alt="part4-image"
+      />
+      <div className="part4-wrapper">
+        <Divider>
+          <div style={headerStyle}>Dịch Vụ Tiêu Biểu</div>
+        </Divider>
+        <div className="services-wrapper">
+          <div className="service">
+            <img
+              src="/icon/service-1.svg"
+              alt="doanh-nghiep-dau-tu"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Doanh Nghiệp Đầu Tư</div>
+          </div>
+          <div className="service">
+            <img
+              src="/icon/service-2.svg"
+              alt="phap-ly-bds"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Pháp Lý Bất Động Sản</div>
+          </div>
+          <div className="service">
+            <img
+              src="/icon/service-3.svg"
+              alt="thue-bao-hiem"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Thuế - Bảo Hiểm</div>
+          </div>
+          <div className="service">
+            <img
+              src="/icon/service-4.svg"
+              alt="so-huu-tri-tue"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Sở Hữu Trí Tuệ</div>
+          </div>
+          <div className="service">
+            <img
+              src="/icon/service-5.svg"
+              alt="phap-ly-chung-khoan"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Pháp Lý Chứng Khoán</div>
+          </div>
+          <div className="service">
+            <img
+              src="/icon/service-6.svg"
+              alt="tu-van-giai-phap"
+              width="230"
+              height="230"
+            />
+            <div style={headingStyle}>Tư Vấn Giấy Phép</div>
+          </div>
+        </div>
+        <div className="btn-wrapper">
+          <button className="btn">
+            <div className="btn-text">XEM THÊM</div>
+            <div className="btn-next-icon">
+              <img
+                src="/icon/next-icon.svg"
+                alt="next-icon"
+                width="7"
+                height="14"
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PartFourHomePage;

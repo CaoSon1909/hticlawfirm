@@ -1,0 +1,46 @@
+.part1-homepage {
+    width: unset;
+    height: 438px;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+.background-image-1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+
+.ant-carousel .slick-next::after {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+}
+
+.ant-carousel .slick-prev::after {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+}
+
+.ant-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #808080;
+}
+.ant-carousel .slick-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: white;
+}
+.ant-carousel .slick-dots-bottom {
+    position: absolute;
+    bottom: -15px;
+}

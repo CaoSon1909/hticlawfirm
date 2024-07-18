@@ -1,0 +1,81 @@
+.part4-homepage {
+    width: unset;
+    height: 824px;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+.bg-image-part4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+}
+
+.part4-wrapper {
+    width: 1169px;
+    height: max-content;
+    position: absolute;
+    left: 150px;
+    top: 34px;
+    // border: 1px solid white;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after
+{
+   border-top: 1px solid #1C76BC;
+   top: 1px;
+}
+.services-wrapper {
+    // background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap : 22px;
+    column-gap: 20px;
+    width: 883px;
+    margin-left: 154px;
+}
+.service {
+    // border: 1px solid white;
+    text-align: center;
+    width: 230px;
+    height: 290px;
+}
+.btn-wrapper {
+    margin-bottom: 22px;
+    position: absolute;
+    left: 35%;
+    width: 348px;
+    height: 48px;
+    border: 1px solid white;
+
+}
+.btn {
+  width: 348px;
+  height: 48px;
+  cursor: pointer;
+  background: none;
+}
+.btn:hover {
+     background: #BE202E
+}
+.btn-text {
+    position: absolute;
+    left: 130px;
+    bottom: 15px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+.btn-next-icon {
+    position: absolute;
+    right: 16px;
+    bottom: 15px;
+}

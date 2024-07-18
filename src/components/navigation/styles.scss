@@ -1,0 +1,25 @@
+.navigation-bar {
+    width: unset;
+    background-color: #1C76BC;
+    margin-top: 15px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.ant-menu-overflow {
+    background-color: #1C76BC;
+    height: 37px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12.89px;
+}
+.ant-menu-title-content {
+    color: #FFFFFF;
+    
+}

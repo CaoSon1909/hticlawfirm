@@ -1,0 +1,54 @@
+.about-us {
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 0.74;
+  width: 1171px;
+  height: 515px;
+  top: 40px;
+  left: 150px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.about-us-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 57px;
+}
+
+.about-us-left {
+  height: 454px;
+  // background: red;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.about-us-right {
+  height: 437px;
+  // background: green;
+  margin-top: 26px;
+}
+.about-us-heading {
+  font-family: 'Roboto';
+}
+
+.about-us-heading-right {
+  position: absolute;
+  right: 10%;
+  font-family: 'Roboto';
+}
+
+.left-paragraph {
+  width: 514px;
+  height: 155px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-top: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
