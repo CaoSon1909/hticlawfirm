@@ -1,0 +1,46 @@
+.part6-homepage {
+    width: unset;
+    height: 319px;
+    border-top: 2px solid #E3E3E3;
+    margin-top: 38px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part6-wrapper {
+    width: 1247px;
+    height: 234px;
+    // border: 1px solid black;
+    display: flex;
+
+}
+.part6-leftside {
+    width: 100%;
+    // border: 1px solid green;
+
+}
+.part6-rightside {
+    width: 100%;
+    // border: 1px solid red;
+    padding-left: 10%;
+
+}
+.part6-heading {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 49px;
+    margin-bottom: 23px
+}
+.vertical-line {
+    border-left: 2px solid #E3E3E3;
+    height: 319px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}

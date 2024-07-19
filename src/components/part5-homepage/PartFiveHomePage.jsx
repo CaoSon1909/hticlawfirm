@@ -1,8 +1,8 @@
 import { Divider } from "antd";
 import React from "react";
-import ListBlogElement from "../elements/ListBlogElement";
 import "../elements/ViewMoreLinkElement";
 import ViewMoreLinkElement from "../elements/ViewMoreLinkElement";
+import ListBlogElement from "../swiper-blog/ListBlogElement";
 import "./styles.scss";
 
 const PartFiveHomePage = () => {

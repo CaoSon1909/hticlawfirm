@@ -1,0 +1,43 @@
+.part7-homepage {
+    width: unset;
+    height: 333px;
+    background: #F8F8F8;
+    // border: 1px solid black;
+    position: relative;
+}
+.part7-heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 49px;
+    margin-bottom: 23px;
+    padding-top: 23px;
+}
+.part7-viewmore {
+    position: absolute;
+    right: 135px;
+    top: 23px;
+}
+.hot-news-wrapper {
+    width: 1173px;
+    height: 225px;
+    // border: 1px solid black;
+    position: absolute;
+    left: 142px;
+    top: 71px;
+    background: #FFFFFF;
+    font-family: "Roboto";
+}
+.hot-news-list {
+    // border: 1px solid red;
+    margin: 28px 32px 23px 38px;
+    width: 1103px;
+    height: 188px;
+    
+}
+.hot-news-content {
+    // border: 1px solid green;
+    height: 32px;
+}
