@@ -1,4 +1,5 @@
 import React from "react";
+import FooterComponent from "../components/footer/FooterComponent";
 import HeaderComponent from "../components/header/HeaderComponent";
 import NavigationComponent from "../components/navigation/NavigationComponent";
 import PartOneHomePage from "../components/part1-homepage/PartOneHomePage";
@@ -25,6 +26,7 @@ const HomePage = () => {
       <Part7HomePage />
       <Part8HomePage />
       <Part9HomePage />
+      <FooterComponent />
     </>
   );
 };
