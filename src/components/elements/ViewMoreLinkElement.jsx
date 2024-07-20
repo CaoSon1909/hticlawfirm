@@ -8,7 +8,7 @@ const ViewMoreLinkElement = ({ style, className }) => {
       <Button type="link">
         <div
           style={{
-            fontFamily: "Roboto",
+            fontFamily: "Montserrat",
             fontSize: "14px",
             fontWeight: "500",
             lineHeight: "49px",

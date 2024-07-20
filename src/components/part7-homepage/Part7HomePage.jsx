@@ -21,7 +21,7 @@ const insideContent = {
   borderBottom: "2px solid #E3E3E3",
   marginTop: "5px",
   marginRight: "15px",
-  fontFamily: "Roboto",
+  fontFamily: "Montserrat",
   fontWeight: "500",
   fontSize: "14px",
 };

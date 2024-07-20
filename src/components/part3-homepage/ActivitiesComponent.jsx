@@ -1,4 +1,4 @@
-import { Divider, Typography } from "antd";
+import { Divider } from "antd";
 import React from "react";
 import "./styles.scss";
 
@@ -9,7 +9,7 @@ const PartThreeHomePage = () => {
         <Divider>
           <div
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "Montserrat",
               fontSize: "28px",
               fontWeight: "500",
               lineHeight: "49px",

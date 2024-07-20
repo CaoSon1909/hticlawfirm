@@ -1,7 +1,7 @@
 import React from "react";
 
 const heading = {
-  fontFamily: "Roboto",
+  fontFamily: "Montserrat",
   fontSize: "16px",
   fontWeight: "700",
   lineHeight: "18.75px",

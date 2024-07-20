@@ -12,7 +12,7 @@ const PartFiveHomePage = () => {
         <Divider>
           <div
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "Montserrat",
               fontSize: "28px",
               fontWeight: "500",
               lineHeight: "49px",

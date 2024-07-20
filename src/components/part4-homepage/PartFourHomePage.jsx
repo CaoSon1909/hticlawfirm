@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const headingStyle = {
   color: "white",
-  fontFamily: "Roboto",
+  fontFamily: "Montserrat",
   fontSize: "20px",
   fontWeight: "500",
   lineHeight: "23.44px",
@@ -13,7 +13,7 @@ const headingStyle = {
 
 const headerStyle = {
   color: "white",
-  fontFamily: "Roboto",
+  fontFamily: "Montserrat",
   fontSize: "28px",
   fontWeight: "500",
   lineHeight: "49px",
