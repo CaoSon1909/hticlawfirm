@@ -1,0 +1,41 @@
+.part1-aboutus-wrapper {
+    position: relative; 
+    height: 8rem; 
+    background-position: center; 
+    background-size: cover; 
+    background-color: red;
+}
+.part1-aboutus-content {
+    display: flex; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #000000; 
+    --bg-opacity: 0.5; 
+}
+.part1-aboutus-left-decoration {
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+  .detail {
+    width: 2rem; 
+    height: 2rem; 
+    --transform-rotate: 45deg; 
+    opacity: 0.5; 
+  }
+}
+.part1-aboutus-right-decoration {
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    .detail {
+    width: 2rem; 
+    height: 2rem; 
+    --transform-rotate: 45deg; 
+    opacity: 0.5; 
+    }
+}

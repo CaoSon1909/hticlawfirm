@@ -1,23 +1,24 @@
 import { Menu } from "antd";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 
 const items = [
   {
     label: "TRANG CHỦ",
-    key: "trang-chu",
+    key: "/home-page",
   },
   {
     label: "GIỚI THIỆU",
-    key: "gioi-thieu",
+    key: "/about-us",
   },
   {
     label: "DỊCH VỤ",
-    key: "dich-vu",
+    key: "/services",
   },
   {
     label: "DỰ ÁN",
-    key: "du-an",
+    key: "/projects",
     children: [
       {
         type: "group",
@@ -51,15 +52,15 @@ const items = [
   },
   {
     label: "TIN TỨC",
-    key: "tin-tuc",
+    key: "/news",
   },
   {
     label: "GÓC NGƯỜI NHẬT TẠI VIỆT NAM",
-    key: "goc-nguoi-nhat-tai-viet-nam",
+    key: "/japanese-in-vietnam",
   },
   {
     label: "LIÊN HỆ",
-    key: "lien-he",
+    key: "/contact",
   },
 ];
 
@@ -68,7 +69,9 @@ const NavigationComponent = () => {
   const onClick = (e) => {
     console.log("click ", e);
     setCurrent(e.key);
+    navigate(e.key);
   };
+  const navigate = useNavigate();
   return (
     <div className="navigation-bar">
       <Menu
