@@ -27,7 +27,7 @@ const MultiLanguageElement = () => {
             style={{ marginTop: "6px" }}
           />
         </span>
-        <Typography.Text strong={true}>Japanese</Typography.Text>
+        <Typography.Text>日本語</Typography.Text>
       </Space>
     </Space>
   );

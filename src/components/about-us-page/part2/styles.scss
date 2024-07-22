@@ -1,0 +1,243 @@
+.part2-aboutpage-wrapper {
+    width: unset;
+    height: 100%;
+    background: #F6F8F9;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    align-items: center;
+    gap: 37px;
+}
+.cover-letter {
+    width: 1170px;
+    height: fit-content;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 58px;
+    margin-top: 38px;
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    background: #FFFFFF;
+
+
+    @media (min-width: 768px) { 
+    flex-direction: row; 
+    align-items: flex-start; 
+    }
+}
+.cover-letter-leftside-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 40px;
+}
+.cover-letter-rightside-wrapper {
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    .cover-letter-fullname{
+        text-align: center; 
+
+        @media (min-width: 768px) { 
+        text-align: left; 
+        }
+    .cover-letter-fullname-h2 {
+        font-size: 1.25rem;
+        line-height: 1.75rem; 
+        font-weight: 600; 
+    }
+    }
+}
+.cover-letter-img-wrapper {
+    margin-bottom: 1.5rem; 
+    padding-top: 32px;
+    padding-left: 39px;
+
+    @media (min-width: 768px) { 
+    margin-bottom: 0; 
+    margin-right: 1.5rem; 
+    }
+    .cover-letter-img {
+        object-fit: cover; 
+        border-radius: 9999px; 
+        width: 10rem; 
+        height: 10rem; 
+        
+    }
+    
+}
+.block-quote {
+    border-radius: 0.5rem;
+    width: 827px;
+    height: 76px;
+    background: #D8EEFF;
+    margin-block-start: 19px;
+    margin-inline-start: 0;
+    margin-inline-end: 27px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .quote {
+        font-weight: 600;
+        color: #006BB5;
+        margin-block-start: 2rem;
+        margin-block-end: 0; 
+    }
+    .sub-quote {
+        margin-block-start: 0.5rem;
+        margin-block-end: 1.5rem;
+    }
+   
+}
+.thu-ngo-h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 15px;
+    color: #BE202E;
+}
+.vision-mission {
+    width: 1170px;
+    height: max-content;
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    background: #FFFFFF;
+    .vision-mission-heading {
+        color: #000000;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 42px;
+    }
+    .part1-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 1rem; 
+        padding-left: 37px;
+        padding-right: 31px;
+        padding-top: 42px;
+        
+        @media (min-width: 768px) { 
+          grid-template-columns: repeat(2, minmax(0, 1fr)); 
+         }
+         .card{
+            height: 162px;
+            position: relative;
+            background: #D7EEFF;
+            display: flex; 
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem; 
+            align-items: flex-start; 
+            border-radius: 0.5rem; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+            .card-img {
+                padding-left: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+         }
+    }
+    .part2-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 2rem; 
+        padding: 30px 30px 67px 37px;
+        
+        @media (min-width: 640px) { 
+          grid-template-columns: repeat(2, minmax(0, 1fr)); 
+         }
+        @media (min-width: 768px) { 
+          grid-template-columns: repeat(3, minmax(0, 1fr)); 
+         }
+        @media (min-width: 1024px) { 
+          grid-template-columns: repeat(4, minmax(0, 1fr)); 
+         }
+
+         .part2-wrapper-card {
+            position: relative; 
+            padding: 1rem; 
+            border-radius: 0.5rem; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+         }
+    }
+}
+.core-value-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teams {
+    width: 1170px;
+    height: 497px;
+    .teams-heading {
+        color: #000000;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    .teams-wrapper {
+        height: max-content;
+        background: #458bb2;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.5rem; 
+
+        .teams-card-wrapper {
+            display: grid ;
+            grid-template-columns: repeat(1, minmax(0, 1fr)); 
+            gap: 2rem; 
+            position: relative;
+            z-index: 99;
+            padding: 32px 29px 30px 37px;
+
+            @media (min-width: 640px) { 
+            grid-template-columns: repeat(2, minmax(0, 1fr)); 
+            }
+
+            @media (min-width: 1024px) { 
+            grid-template-columns: repeat(4, minmax(0, 1fr)); 
+            }
+
+            .teams-card-item {
+                padding: 1rem; 
+                border-radius: 0.5rem; 
+                text-align: center; 
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                background: #FFFFFF;
+
+
+                .img {
+                    margin-bottom: 1rem; 
+                    border-radius: 9999px; 
+                    width: 8rem; 
+                    height: 8rem; 
+                }
+                .contact-icons {
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center;
+                    gap: 0.5rem
+
+                }
+            }
+        }
+    }
+}

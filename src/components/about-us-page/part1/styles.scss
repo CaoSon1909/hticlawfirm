@@ -2,8 +2,22 @@
     position: relative; 
     height: 8rem; 
     background-position: center; 
-    background-size: cover; 
-    background-color: red;
+    background-size: cover;
+    background: #458bb2;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-family: Montserrat;
+
+}
+.bg-img-p1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.37;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
 }
 .part1-aboutus-content {
     display: flex; 
@@ -20,24 +34,12 @@
 .part1-aboutus-left-decoration {
     position: absolute; 
     left: 0; 
-    top: 50%;
-    border: 1px solid red;
-  .detail {
-    width: 2rem; 
-    height: 2rem; 
-    --transform-rotate: 45deg; 
-    opacity: 0.5; 
-  }
+    top: 0;
 }
 .part1-aboutus-right-decoration {
     position: absolute; 
     right: 0; 
-    top: 50%; 
-    border: 1px solid red;
-    .detail {
-    width: 2rem; 
-    height: 2rem; 
-    --transform-rotate: 45deg; 
-    opacity: 0.5; 
-    }
+    top: 0;
+    transform: rotate(180deg);
+
 }
