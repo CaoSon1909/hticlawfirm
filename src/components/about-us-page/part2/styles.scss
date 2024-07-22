@@ -175,6 +175,14 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+
+            .tooltip-part2-card {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* number of lines to show */
+                         line-clamp: 4; 
+                 -webkit-box-orient: vertical;
+            }
          }
     }
 }

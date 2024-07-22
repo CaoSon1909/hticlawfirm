@@ -3,6 +3,7 @@ import {
   InstagramOutlined,
   LinkedinOutlined,
 } from "@ant-design/icons";
+import { Tooltip } from "antd";
 import React from "react";
 import FooterComponent from "../../footer/FooterComponent";
 import "./styles.scss";
@@ -27,7 +28,13 @@ const Part2WrapperCard = ({ imgName, h2Text, spanText, para }) => {
         <br />
         <span>{spanText}</span>
       </h3>
-      <p>{para}</p>
+      <Tooltip
+        placement="bottom"
+        title={para}
+        overlayInnerStyle={{ background: "white", color: "black" }}
+      >
+        <p className="tooltip-part2-card">{para}</p>
+      </Tooltip>
     </div>
   );
 };
@@ -232,7 +239,12 @@ const Part2AboutUsPage = () => {
               h2Text={"Sự Trung Thực"}
               spanText={"(Honesty)"}
               para={
-                "Tạo dựng hình ảnh luật sư có tâm, có tâm, có giá trị là chỗ dựa cho mọi tổ chức, cá nhân có nhu cầu cần đến sự hỗ trợ pháp lý."
+                <>
+                  "Luôn <stong>trung thực</stong> với khác hàng, cung cấp thông
+                  tin đầy đủ và chính xác, không che dấu thông tin để tư lợi.
+                  Với chúng tôi thì Trung thực là con đường duy nhất để xây dựng
+                  niềm tin và tạo mối quan hệ lâu dài với khách hàng, đối tác."
+                </>
               }
             />
             <Part2WrapperCard
@@ -240,7 +252,13 @@ const Part2AboutUsPage = () => {
               h2Text={"Sự Tin Cậy"}
               spanText={"(Trust)"}
               para={
-                "Để đạt được sự tin cậy, tín nhiệm từ khách hàng là mục đích mà mỗi thành viên của HTIC luôn nỗ lực hướng tới. Chúng tôi phải luôn cố gắng để hoàn thiện bản thân, trau dồi kiến thức và kinh nghiệm, nhằm hướng tới..."
+                <>
+                  "Để đạt được sự tin cậy, tín nhiệm từ khách hàng là mục đích
+                  mà mỗi thành viên của <strong>HTIC</strong> luôn nỗ lực hướng
+                  tới. Chúng tôi phải luôn cố gắng để hoàn thiện bản thân, trau
+                  dồi kiến thức và kinh nghiệm, nhằm hướng tới một hình ảnh đẹp,
+                  tạo ra giá trị tích cực khi cung cấp dịch vụ cho khách hàng."
+                </>
               }
             />
             <Part2WrapperCard
@@ -248,7 +266,15 @@ const Part2AboutUsPage = () => {
               h2Text={"Sự Chính Trực"}
               spanText={"(Integrity)"}
               para={
-                "Là luật sư yếu tố chính trực luôn đứng hàng đầu, chúng tôi đưa ra tiêu chí này để khẳng định với khách hàng rằng sẽ ”KHÔNG BAO GIỜ VÌ MỘT CÁM DỖ NÀO KHÁC MÀ ĐI LẠI LỢI ÍCH CỦA KHÁCH HÀNG.”"
+                <>
+                  "Là luật sư yếu tố chính trực luôn đứng hàng đầu, chúng tôi
+                  đưa ra tiêu chí này để khẳng định với khách hàng rằng sẽ{" "}
+                  <strong>
+                    KHÔNG BAO GIỜ VÌ MỘT CÁM DỖ NÀO KHÁC MÀ ĐI LẠI LỢI ÍCH CỦA
+                    KHÁCH HÀNG.
+                  </strong>
+                  "
+                </>
               }
             />
             <Part2WrapperCard
@@ -256,7 +282,13 @@ const Part2AboutUsPage = () => {
               h2Text={"Sự Cẩn Trọng"}
               spanText={"(Carefulness)"}
               para={
-                "Đây là giá trị bên trong của mỗi cá nhân người luật sư và nhân viên HTIC. Chúng tôi đưa ra sự cẩn trọng để đảm bảo với khách hàng rằng mỗi lời tư vấn & giải pháp chúng tôi đưa ra đều được chắt lọc kỹ lưỡng để mang lại..."
+                <>
+                  "Đây là giá trị bên trong của mỗi cá nhân người luật sư và
+                  nhân viên <strong>HTIC</strong>. Chúng tôi đưa ra sự cẩn trọng
+                  để đảm bảo với khách hàng rằng mỗi lời tư vấn & giải pháp
+                  chúng tôi đưa ra đều được chắt lọc kỹ lưỡng để mang lại giá
+                  trị cao nhất."
+                </>
               }
             />
           </div>
