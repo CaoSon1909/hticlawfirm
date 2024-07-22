@@ -14,13 +14,14 @@
     left: 0; 
     justify-content: center; 
     align-items: center; 
-    background-color: #000000; 
+    // background-color: #000000; 
     --bg-opacity: 0.5; 
 }
 .part1-aboutus-left-decoration {
     position: absolute; 
     left: 0; 
-    top: 50%; 
+    top: 50%;
+    border: 1px solid red;
   .detail {
     width: 2rem; 
     height: 2rem; 
@@ -32,6 +33,7 @@
     position: absolute; 
     right: 0; 
     top: 50%; 
+    border: 1px solid red;
     .detail {
     width: 2rem; 
     height: 2rem; 

@@ -1,6 +1,6 @@
 import React from "react";
-import ContactHeaderElement from "../elements/ContactHeaderElement";
-import MultiLanguageElement from "../elements/MultiLanguageElement";
+import ContactHeaderElement from "../homepage/elements/ContactHeaderElement";
+import MultiLanguageElement from "../homepage/elements/MultiLanguageElement";
 import "./styles.scss";
 
 const HeaderComponent = () => {

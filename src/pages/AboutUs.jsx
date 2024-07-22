@@ -1,14 +1,14 @@
 import React from "react";
+import Part1AboutUsComponent from "../components/about-us-page/part1/Part1AboutUsComponent";
 import HeaderComponent from "../components/header/HeaderComponent";
 import NavigationComponent from "../components/navigation/NavigationComponent";
-import Part1AboutUs from "../components/part1-aboutuspage/Part1AboutUs";
 
 const AboutUs = () => {
   return (
     <>
       <HeaderComponent />
       <NavigationComponent />
-      <Part1AboutUs />
+      <Part1AboutUsComponent />
     </>
   );
 };
