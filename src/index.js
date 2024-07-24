@@ -9,6 +9,7 @@ import JapaneseInVietnamPage from './pages/JapaneseInVietnamPage';
 import NewsPage from './pages/NewsPage';
 import ProjectPage from './pages/ProjectPage';
 import Service02Page from './pages/Service02Page';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 import ServicePage from './pages/ServicePage';
 import reportWebVitals from './reportWebVitals';
 
@@ -26,6 +27,7 @@ root.render(
       <Route exact path='/japanese-in-vietnam' element={<JapaneseInVietnamPage/>} />
       <Route exact path='/contact' element={<ContactPage/>} />
       <Route exact path='/services-02' element={<Service02Page/>} />
+      <Route exact path='/services/:serviceId' element={<ServiceDetailPage/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
