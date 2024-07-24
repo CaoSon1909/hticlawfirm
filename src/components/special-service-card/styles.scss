@@ -1,0 +1,18 @@
+.special-service-card-wrapper {
+    width: 382px;
+    height: 58px;
+    border: 1px solid #E1E1E1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .special-service-card-img {
+        padding: 10px;
+    }
+    .special-service-card-name {
+        text-align: left;
+        width: 285px;
+        height: 50px;
+        padding-top: 30px;
+    }
+}
