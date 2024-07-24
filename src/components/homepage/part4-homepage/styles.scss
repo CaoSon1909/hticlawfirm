@@ -4,6 +4,9 @@
     background: black;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bg-image-part4 {
     background-position: center;
@@ -19,9 +22,12 @@
 .part4-wrapper {
     width: 1169px;
     height: max-content;
-    position: absolute;
-    left: 150px;
-    top: 34px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
     // border: 1px solid white;
 }
 
@@ -38,7 +44,8 @@
     row-gap : 22px;
     column-gap: 20px;
     width: 883px;
-    margin-left: 154px;
+    padding-left: 3rem;
+    padding-top: 2rem;
 }
 .service {
     // border: 1px solid white;
@@ -48,11 +55,9 @@
 }
 .btn-wrapper {
     margin-bottom: 22px;
-    position: absolute;
-    left: 35%;
     width: 348px;
     height: 48px;
-    border: 1px solid white;
+    // border: 1px solid white;
 
 }
 .btn {
@@ -60,22 +65,26 @@
   height: 48px;
   cursor: pointer;
   background: none;
+  margin-top: 40px;
+  border: 1px solid white;
+  position: relative;
 }
 .btn:hover {
      background: #BE202E
 }
 .btn-text {
-    position: absolute;
-    left: 130px;
-    bottom: 15px;
     color: #FFFFFF;
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 14px;
     line-height: 16.41px;
+    position: absolute;
+    left: 35%;
+    bottom: 25%
+
 }
 .btn-next-icon {
     position: absolute;
-    right: 16px;
-    bottom: 15px;
+    right: 30%;
+    bottom: 25%
 }

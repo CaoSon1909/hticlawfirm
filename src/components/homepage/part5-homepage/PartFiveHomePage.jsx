@@ -10,17 +10,7 @@ const PartFiveHomePage = () => {
     <div className="part5-homepage">
       <div className="part5-heading">
         <Divider>
-          <div
-            style={{
-              fontFamily: "Montserrat",
-              fontSize: "28px",
-              fontWeight: "500",
-              lineHeight: "49px",
-              marginBottom: "5px",
-            }}
-          >
-            Dự Án Tiêu Biểu
-          </div>
+          <div className="heading-content">Dự Án Tiêu Biểu</div>
         </Divider>
         <ViewMoreLinkElement className="view-more-link-part5" />
       </div>

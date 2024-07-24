@@ -5,7 +5,6 @@ import {
 } from "@ant-design/icons";
 import { Tooltip } from "antd";
 import React from "react";
-import FooterComponent from "../../footer/FooterComponent";
 import "./styles.scss";
 
 const Part2WrapperCard = ({ imgName, h2Text, spanText, para }) => {
@@ -326,7 +325,6 @@ const Part2AboutUsPage = () => {
           </div>
         </div>
       </div>
-      <FooterComponent />
     </>
   );
 };

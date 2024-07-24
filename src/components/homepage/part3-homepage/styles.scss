@@ -12,56 +12,9 @@
     top: 34px;
     // border: 1px solid black;
 }
-.activities-wrapper {
-    background: white;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 27px;
-}
-.activity {
-    width: 272px;
-    /* height: 276px; */
-    display: inline-block;
-    text-align: center;
-    // border: 1px solid black;
-    position: relative;
-    height: auto;
-    min-height: 100% !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.activity-heading {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23.44px;
-    padding-bottom: 5px;
-    padding-top: 2px;
-    margin-right: 15px;
-}
-.activity-paragraph {
-    text-align: center;
-    font-family: "Montserrat";
-    width: 171px;
-    word-wrap: break-word;
-}
-.activity-paragraph-wrapper {
-    width: 188px;
-    height: max-content;
-    padding-left: 25px;
-    padding-top: 5px;
-}
-.activity-image {
-    text-align: center;
-    height: 70px;
-    border: 2px solid #E3E3E3;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.part3-heading {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 49px;
 }

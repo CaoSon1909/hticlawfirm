@@ -1,0 +1,16 @@
+.section-heading-wrapper {
+    position: absolute;
+    top: 33px;
+    left: 37px;
+}
+.blockquote-content {
+    height: 42px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.ant-typography {
+    blockquote {
+        border-inline-start: 4px solid #0F75BC;
+    }
+}

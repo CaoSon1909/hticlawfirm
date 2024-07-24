@@ -1,5 +1,7 @@
 import { Divider } from "antd";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import SectionHeadingComponent from "../../section-heading/SectionHeadingComponent";
 import "./styles.scss";
 
 const headingStyle = {
@@ -19,7 +21,11 @@ const headerStyle = {
   lineHeight: "49px",
 };
 
-const PartFourHomePage = () => {
+const PartFourHomePage = ({ isDivider }) => {
+  const navigate = useNavigate();
+  const navigateOnClick = () => {
+    navigate("/services-02");
+  };
   return (
     <div className="part4-homepage">
       <img
@@ -28,9 +34,20 @@ const PartFourHomePage = () => {
         alt="part4-image"
       />
       <div className="part4-wrapper">
-        <Divider>
-          <div style={headerStyle}>Dịch Vụ Tiêu Biểu</div>
-        </Divider>
+        {isDivider ? (
+          <Divider>
+            <div style={headerStyle}>Dịch Vụ Tiêu Biểu</div>
+          </Divider>
+        ) : (
+          <div>
+            <SectionHeadingComponent
+              content={"Dịch Vụ Tiêu Biểu"}
+              styleProp={{ marginTop: "-5rem" }}
+              isWhite={true}
+            />
+          </div>
+        )}
+
         <div className="services-wrapper">
           <div className="service">
             <img
@@ -88,7 +105,7 @@ const PartFourHomePage = () => {
           </div>
         </div>
         <div className="btn-wrapper">
-          <button className="btn">
+          <button className="btn" onClick={navigateOnClick}>
             <div className="btn-text">XEM THÊM</div>
             <div className="btn-next-icon">
               <img

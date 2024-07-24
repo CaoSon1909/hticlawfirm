@@ -1,0 +1,99 @@
+.service02-wrapper {
+    width: unset;
+    height: 1700px;
+    background: #F6F8F9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .service02-wrapper-content {
+        background: white;
+        width: 1174px;
+        height: 1627px;
+    }
+    .service02-wrapper-content-top-services {
+        // border: 1px solid red;
+        height: 728px;
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+        padding-top: 32px;
+        padding-right: 30px;
+        padding-left: 37px;
+        position: relative;
+        .top-services-heading {
+        //   border: 1px solid red;
+          height: 43px;
+          display: flex;
+          justify-content: space-between;
+
+          .top-services-search-bar {
+            width: 532px;
+            height: 40px;
+            padding-top: 10px;
+          }
+        }
+        .top-services {
+            // border: 1px solid red;
+            padding-top: 32px;
+            padding-right: 30px;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+        
+    }
+    .service02-wrapper-content-other-services {
+        // border: 1px solid red;
+        height: 899px;
+        position: relative;
+        .other-service-heading {
+            // border: 1px solid red;
+            height: 43px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .other-service-list {
+            margin-top: 30px;
+        }
+    }
+    
+}
+.service-02-card-wrapper {
+    // border: 1px solid red;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 35px;
+    font-family: Montserrat;
+
+
+    .service-02-card-image {
+        // border: 1px solid red;
+        width: fit-content;
+        display: flex;
+    }
+    .service-02-card-content {
+        // border: 1px solid red;
+        width: 100%;
+
+        .content-header {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .content-publish-date {
+            font-size: 12px;
+            font-style: italic;
+        }
+        .content-paragraph {
+            margin-top: 9px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* number of lines to show */
+                     line-clamp: 4; 
+             -webkit-box-orient: vertical;
+        }
+    }
+}

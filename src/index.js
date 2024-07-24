@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import AboutUs from './pages/AboutUs';
+import ContactPage from './pages/ContactPage';
 import HomePage from "./pages/HomePage";
+import JapaneseInVietnamPage from './pages/JapaneseInVietnamPage';
+import NewsPage from './pages/NewsPage';
+import ProjectPage from './pages/ProjectPage';
+import Service02Page from './pages/Service02Page';
+import ServicePage from './pages/ServicePage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,11 +20,12 @@ root.render(
       <Route exact path='/' element={<HomePage/>} />
       <Route exact path='/home-page' element={<HomePage/>} />
       <Route exact path='/about-us' element={<AboutUs/>} />
-      <Route exact path='/services' element={<></>} />
-      <Route exact path='/projects' element={<></>} />
-      <Route exact path='/news' element={<></>} />
-      <Route exact path='/japanese-in-vietnam' element={<></>} />
-      <Route exact path='/contact' element={<></>} />
+      <Route exact path='/services' element={<ServicePage />} />
+      <Route exact path='/projects' element={<ProjectPage/>} />
+      <Route exact path='/news' element={<NewsPage/>} />
+      <Route exact path='/japanese-in-vietnam' element={<JapaneseInVietnamPage/>} />
+      <Route exact path='/contact' element={<ContactPage/>} />
+      <Route exact path='/services-02' element={<Service02Page/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

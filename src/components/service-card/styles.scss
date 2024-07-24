@@ -1,0 +1,31 @@
+.service-card-wrapper {
+    width: 1037px;
+    height: 212px;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 10px
+}
+.service-card-img {
+    // border: 1px solid red;
+
+}
+.service-card-content {
+    // border: 1px solid red;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
+
+}
+.service-card-paragraph {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+             line-clamp: 4; 
+     -webkit-box-orient: vertical;
+}

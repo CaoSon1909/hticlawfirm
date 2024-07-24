@@ -1,0 +1,81 @@
+.service-component {
+    background: #F6F8F9;
+    width: unset;
+    height: 2100px;
+    position: relative;
+    font-family: Montserrat;
+
+    .service-component-wrapper {
+        width: 1170px;
+        height: 2000px;
+        background: #FFFFFF;
+        position: absolute;
+        left: 135px;
+        top: 37px;
+    }
+}
+.activities-list-wrapper {
+    padding-top: 123px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.top-services-wrapper {
+    width: 1171px;
+    height: 774px;
+    margin-top: 60px;
+
+}
+.other-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 10rem 3rem 0 3rem;
+
+    .other-services-wrapper {
+        display: grid ;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 1.5rem; 
+
+
+        @media (min-width: 768px) { 
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+        }
+    }
+    .other-services-card {
+        overflow: hidden; 
+        border-radius: 0.5rem; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .view-more-btn {
+            border: 1px solid black;
+            width: 213px;
+            height: 38px;
+            text-align: center;
+            padding-top: 1rem;
+        }
+        .view-more-btn:hover {
+            background-color: #BE202E;
+            cursor: pointer;
+        }
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+}

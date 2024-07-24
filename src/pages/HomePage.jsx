@@ -20,7 +20,7 @@ const HomePage = () => {
       <PartOneHomePage />
       <PartTwoHomePage />
       <PartThreeHomePage />
-      <PartFourHomePage />
+      <PartFourHomePage isDivider={true} />
       <PartFiveHomePage />
       <PartSixHomePage />
       <Part7HomePage />

@@ -1,0 +1,26 @@
+.view-more-btn-wrapper {
+    width: 100%;
+    height: 38px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .view-more-btn {
+        width: 213px;
+        height: 38px;
+        border: 1px solid black;
+        border-radius: 8px;
+
+    }
+
+    .view-more-btn:hover {
+        background-color: #BE202E;
+        cursor: pointer;
+    }
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: white;
+    }
+}
