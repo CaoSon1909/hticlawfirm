@@ -55,6 +55,13 @@
             height: 43px;
             display: flex;
             justify-content: space-between;
+
+            .other-service-search-bar {
+                width: 532px;
+                height: 40px;
+                padding-top: 25px;
+                padding-right: 20px;
+            }
         }
         .other-service-list {
             margin-top: 30px;

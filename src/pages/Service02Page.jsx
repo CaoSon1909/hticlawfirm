@@ -14,7 +14,11 @@ const Service02Page = () => {
         heading={"Dịch Vụ Của Chúng Tôi"}
         subHeading={"Services"}
       />
-      <Service02Component />
+      <Service02Component
+        part1Heading={"Dịch Vụ Nổi Bật"}
+        part2Heading={"Các Dịch Vụ Khác"}
+        isFlex={false}
+      />
       <FooterComponent />
     </>
   );

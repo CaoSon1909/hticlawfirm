@@ -17,21 +17,15 @@ const otherServicesData = () => {
     };
   });
 };
-const topServicesData = () => {
-  return Array.from({ length: 20 }).map((_, i) => {
-    return {
-      id: i,
-      title: `top service -  ${i}`,
-    };
-  });
-};
-const Service02Component = () => {
+const Service02Component = (props) => {
+  const { part1Heading, part2Heading, isFlex } = props;
   const onSearch = () => {};
   const [initLoading, setInitLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [list, setList] = useState([]);
   const [step, setStep] = useState(2);
+  console.log("isFlex", isFlex);
   useEffect(() => {
     // fetch(fakeDataUrl)
     //   .then((res) => res.json())
@@ -73,7 +67,7 @@ const Service02Component = () => {
           <div className="top-services-heading">
             <div>
               <SectionHeadingComponent
-                content={"Dịch Vụ Nổi Bật"}
+                content={part1Heading}
                 styleProp={{ top: "20px" }}
               />
             </div>
@@ -101,11 +95,27 @@ const Service02Component = () => {
         </div>
         <div className="service02-wrapper-content-other-services">
           <div className="other-service-heading">
-            <SectionHeadingComponent
-              content={"Các Dịch Vụ Khác"}
-              styleProp={{ top: "0" }}
+            <div>
+              <SectionHeadingComponent
+                content={part2Heading}
+                styleProp={{ top: "0" }}
+              />
+            </div>
+            {isFlex ? (
+              <div className="other-service-search-bar">
+                <Input.Search
+                  placeholder="Tìm Kiếm"
+                  onSearch={onSearch}
+                  enterButton
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+            <OtherServicesComponent
+              data={otherServicesData()}
+              isFlex={isFlex}
             />
-            <OtherServicesComponent data={otherServicesData()} />
           </div>
         </div>
       </div>

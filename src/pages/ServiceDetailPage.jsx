@@ -16,7 +16,7 @@ const ServiceDetailPage = () => {
         heading={"Dịch Vụ Của Chúng Tôi"}
         subHeading={"Services"}
       />
-      <ServiceDetailContainer />
+      <ServiceDetailContainer id={serviceId} />
       <FooterComponent />
     </div>
   );

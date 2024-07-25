@@ -43,11 +43,12 @@ const otherServicesData = () => {
   });
 };
 
-const ServiceDetailComponent = () => {
+const ServiceDetailComponent = (props) => {
+  const { id } = props;
   return (
     <div className="service-detail-component-wrapper">
       <div className="detail-leftside-wrapper">
-        <h1>Giấy Phép Kinh Doanh Lữ Hành Quốc Tế</h1>
+        <h1>{`Giấy Phép Kinh Doanh Lữ Hành Quốc Tế - ${id}`}</h1>
         <p>18/05/2022</p>
         <img src="/background-image/travel-img.svg" />
         <p>
