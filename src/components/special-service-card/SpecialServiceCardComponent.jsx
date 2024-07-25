@@ -13,7 +13,7 @@ const SpecialServiceCardComponent = (props) => {
           />
         </div>
         <div className="special-service-card-name">{data.name}</div>
-        <div>
+        <div className="special-service-card-icon">
           <img
             src="/icon/special-service-icon.svg"
             alt="special-service-icon"

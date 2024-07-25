@@ -34,14 +34,21 @@
         }
         .newest-services {
             width: 382px;
-            height: 657px;
-            border: 1px solid red;
+            height: 500px;
+            // border: 1px solid red;
             position: relative;
+
+            .newsest-services-list {
+                // border: 1px solid red;
+                position: absolute;
+                top: 80px;
+                max-width: 364px;
+            }
         }
         .special-services {
             width: 382px;
             height: 486px;
-            border: 1px solid red;
+            // border: 1px solid red;
             position: relative;
             .special-services-outline {
                 position: absolute;
@@ -51,5 +58,25 @@
                 gap: 12px;
             }
         }
+    }
+}
+.newest-service-card-wrapper {
+    display: flex;
+    gap: 10px;
+
+    .newest-service-card-title {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                 line-clamp: 4; 
+         -webkit-box-orient: vertical;
+    }
+
+    .newest-service-card-paragraph {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                 line-clamp: 4; 
+         -webkit-box-orient: vertical;
     }
 }
