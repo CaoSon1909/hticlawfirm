@@ -170,6 +170,7 @@ const ServiceDetailComponent = (props) => {
             data={otherServicesData()}
             pageType={pageType}
             isDetailPage={true}
+            itemPerPage={3}
           />
         </div>
       ) : (

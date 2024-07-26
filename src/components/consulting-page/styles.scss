@@ -1,0 +1,59 @@
+.consulting-page-outline {
+    width: unset;
+    height: 1400px;
+    background: #F6F8F9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consulting-page-wrapper {
+    background: white;
+    width: 1174px;
+    height: 1300px;
+    position: relative;
+} 
+.top-consulting-page-heading {
+    display: flex;
+    justify-content: space-between;
+}
+.top-consulting-page-search-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 532px;
+}
+.bot-consulting-page-heading {
+    position: relative;
+    top: 850px;
+}
+.new-consulting-wrapper {
+    width: 1173px;
+    height: 225px;
+    position: absolute;
+    left: 0px;
+    top: 71px;
+    background: #FFFFFF;
+    font-family: "Montserrat";
+}
+.view-more-consulting-news-btn {
+    border: 1px solid black;
+    width: 213px;
+    height: 38px;
+    text-align: center;
+    padding-top: 1rem;
+    position: absolute;
+    top: 330px;
+    left: 40%;
+}
+.view-more-consulting-news-btn:hover {
+    background-color: #BE202E;
+    cursor: pointer;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white;
+}

@@ -55,6 +55,10 @@ const items = [
     key: "/news",
   },
   {
+    label: "TƯ VẤN PHÁP LÝ",
+    key: "/consults",
+  },
+  {
     label: "GÓC NGƯỜI NHẬT TẠI VIỆT NAM",
     key: "/japanese-in-vietnam",
   },

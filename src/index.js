@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import AboutUs from './pages/AboutUs';
+import ConsultDetailPage from './pages/ConsultDetailPage';
+import ConsultPage from './pages/ConsultPage';
 import ContactPage from './pages/ContactPage';
 import HomePage from "./pages/HomePage";
 import JapaneseInVietnamPage from './pages/JapaneseInVietnamPage';
@@ -32,6 +34,8 @@ root.render(
       <Route exact path='/services/:serviceId' element={<ServiceDetailPage/>} />
       <Route exact path='/news/:newsId' element={<NewsDetailPage/>} />
       <Route exact path='/projects/:projectId' element={<ProjectDetailPage/>} />
+      <Route exact path='/consults' element={<ConsultPage/>} />
+      <Route exact path='/consults/:consultId' element={<ConsultDetailPage/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
