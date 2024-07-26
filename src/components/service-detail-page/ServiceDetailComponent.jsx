@@ -1,6 +1,8 @@
 import { Card, List } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
+import { PAGE_TYPE } from "../../constants";
+import OtherServicesComponent from "../other-services/OtherServicesComponent";
 import SectionHeadingComponent from "../section-heading/SectionHeadingComponent";
 import SpecialServiceCardComponent from "../special-service-card/SpecialServiceCardComponent";
 import "./styles.scss";
@@ -50,114 +52,129 @@ const otherServicesData = () => {
 };
 
 const ServiceDetailComponent = (props) => {
-  const { id } = props;
+  const { id, pageType } = props;
   return (
-    <div className="service-detail-component-wrapper">
-      <div className="detail-leftside-wrapper">
-        <h1>{`Giấy Phép Kinh Doanh Lữ Hành Quốc Tế - ${id}`}</h1>
-        <p>18/05/2022</p>
-        <img src="/background-image/travel-img.svg" />
-        <p>
-          Sau khi được cấp Giấy chứng nhận đăng ký kinh doanh, doanh nghiệp muốn
-          hoạt động kinh doanh lữ hành cần phải thực hiện thủ tục cấp giấy phép
-          kinh doanh lữ hành quốc tế.
-        </p>
-        <p>
-          Để cấp giấy phép kinh doanh lữ hành quốc tế, doanh nghiệp cần phải đáp
-          ứng một số điều kiện nhất định.
-        </p>
-        <h2>THỦ TỤC CẤP PHÉP</h2>
-        <h3>1. ĐIỀU KIỆN CẤP PHÉP</h3>
-        <ul>
-          <li>
-            Doanh nghiệp phải thành lập theo quy định của pháp luật về doanh
-            nghiệp.
-          </li>
-          <li>
-            Người phụ trách điều hành lữ hành phải có chứng chỉ nghiệp vụ lữ
-            hành.
-          </li>
-          <li>Địa điểm kinh doanh phải đáp ứng các quy định của pháp luật.</li>
-        </ul>
+    <div className="service-detail-outline">
+      <div className="service-detail-component-wrapper">
+        <div className="detail-leftside-wrapper">
+          <h1>{`Giấy Phép Kinh Doanh Lữ Hành Quốc Tế - ${id}`}</h1>
+          <p>18/05/2022</p>
+          <img src="/background-image/travel-img.svg" />
+          <p>
+            Sau khi được cấp Giấy chứng nhận đăng ký kinh doanh, doanh nghiệp
+            muốn hoạt động kinh doanh lữ hành cần phải thực hiện thủ tục cấp
+            giấy phép kinh doanh lữ hành quốc tế.
+          </p>
+          <p>
+            Để cấp giấy phép kinh doanh lữ hành quốc tế, doanh nghiệp cần phải
+            đáp ứng một số điều kiện nhất định.
+          </p>
+          <h2>THỦ TỤC CẤP PHÉP</h2>
+          <h3>1. ĐIỀU KIỆN CẤP PHÉP</h3>
+          <ul>
+            <li>
+              Doanh nghiệp phải thành lập theo quy định của pháp luật về doanh
+              nghiệp.
+            </li>
+            <li>
+              Người phụ trách điều hành lữ hành phải có chứng chỉ nghiệp vụ lữ
+              hành.
+            </li>
+            <li>
+              Địa điểm kinh doanh phải đáp ứng các quy định của pháp luật.
+            </li>
+          </ul>
 
-        <h3>2. THỦ TỤC CẤP PHÉP</h3>
-        <ul>
-          <li>Đơn xin cấp giấy phép.</li>
-          <li>Giấy chứng nhận đăng ký kinh doanh.</li>
-          <li>Chứng chỉ nghiệp vụ lữ hành.</li>
-        </ul>
-      </div>
-      <div className="detail-rightside-wrapper">
-        <div className="newest-services">
-          <SectionHeadingComponent
-            content="Dịch vụ mới nhất"
-            styleProp={{ top: "0", left: "0" }}
-          />
-          <div className="newsest-services-list">
-            <List
-              grid={{
-                gutter: 3,
-                column: 1,
-              }}
-              itemLayout="vertical"
-              size="small"
-              pagination={{
-                position: "bottom",
-                align: "left",
-                pageSize: 2,
-              }}
-              dataSource={otherServicesData()}
-              renderItem={(item) => (
-                <List.Item>
-                  <Card>
-                    <div className="newest-service-card-wrapper">
-                      <div className="newest-service-card-img">
-                        <img
-                          src="/background-image/tax-64x64.svg"
-                          alt="tax-64x64"
-                        />
-                      </div>
-                      <div className="newest-service-card-content">
-                        <Link to={`/services/${item.id}`}>
-                          <div className="newest-service-card-title">
-                            Thủ tục Đăng ký thế chấp quyền sử dụng đất, tài sản
-                            gắn liền với đất
-                          </div>
-                        </Link>
-                        <div className="newest-service-card-date">
-                          18/05/2022
-                        </div>
-                        <div className="newest-service-card-paragraph">
-                          Trong những năm gần đây, nền kinh tế của Việt Nam đã
-                          phát triển mạnh mẽ và vững chắc hơn, đó cũng là một
-                          trong những lý do thôi thúc những nhà đầu tư trong
-                          nước mở rộng quy mô kinh doanh, khám phá và đầu tư ra
-                          nước ngoài để tìm kiếm nguồn lợi nhuận... Thông tư
-                          06/2022/TT-BKHĐT ngày 10/5/2022 hướng dẫn Nghị định
-                          80/2021/NĐ-CP hướng dẫn Luật hỗ trợ Doanh nghiệp nhỏ
-                          và vừa (DNNVV). 1. Hỗ trợ khởi nghiệp sáng tạo Theo
-                          đó, cơ quan, tổ chức hỗ trợ DNNVV...
-                        </div>
-                      </div>
-                    </div>
-                  </Card>
-                </List.Item>
-              )}
+          <h3>2. THỦ TỤC CẤP PHÉP</h3>
+          <ul>
+            <li>Đơn xin cấp giấy phép.</li>
+            <li>Giấy chứng nhận đăng ký kinh doanh.</li>
+            <li>Chứng chỉ nghiệp vụ lữ hành.</li>
+          </ul>
+        </div>
+        <div className="detail-rightside-wrapper">
+          <div className="newest-services">
+            <SectionHeadingComponent
+              content="Dịch vụ mới nhất"
+              styleProp={{ top: "0", left: "0" }}
             />
+            <div className="newsest-services-list">
+              <List
+                grid={{
+                  gutter: 3,
+                  column: 1,
+                }}
+                itemLayout="vertical"
+                size="small"
+                pagination={{
+                  position: "bottom",
+                  align: "left",
+                  pageSize: 2,
+                }}
+                dataSource={otherServicesData()}
+                renderItem={(item) => (
+                  <List.Item>
+                    <Card>
+                      <div className="newest-service-card-wrapper">
+                        <div className="newest-service-card-img">
+                          <img
+                            src="/background-image/tax-64x64.svg"
+                            alt="tax-64x64"
+                          />
+                        </div>
+                        <div className="newest-service-card-content">
+                          <Link to={`/services/${item.id}`}>
+                            <div className="newest-service-card-title">
+                              Thủ tục Đăng ký thế chấp quyền sử dụng đất, tài
+                              sản gắn liền với đất
+                            </div>
+                          </Link>
+                          <div className="newest-service-card-date">
+                            18/05/2022
+                          </div>
+                          <div className="newest-service-card-paragraph">
+                            Trong những năm gần đây, nền kinh tế của Việt Nam đã
+                            phát triển mạnh mẽ và vững chắc hơn, đó cũng là một
+                            trong những lý do thôi thúc những nhà đầu tư trong
+                            nước mở rộng quy mô kinh doanh, khám phá và đầu tư
+                            ra nước ngoài để tìm kiếm nguồn lợi nhuận... Thông
+                            tư 06/2022/TT-BKHĐT ngày 10/5/2022 hướng dẫn Nghị
+                            định 80/2021/NĐ-CP hướng dẫn Luật hỗ trợ Doanh
+                            nghiệp nhỏ và vừa (DNNVV). 1. Hỗ trợ khởi nghiệp
+                            sáng tạo Theo đó, cơ quan, tổ chức hỗ trợ DNNVV...
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                  </List.Item>
+                )}
+              />
+            </div>
           </div>
-        </div>
-        <div className="special-services">
-          <SectionHeadingComponent
-            content="Các dịch vụ tiêu biểu"
-            styleProp={{ top: "0", left: "0" }}
-          />
-          <div className="special-services-outline">
-            {specialServiceData.map((item) => (
-              <SpecialServiceCardComponent data={item} />
-            ))}
+          <div className="special-services">
+            <SectionHeadingComponent
+              content="Các dịch vụ tiêu biểu"
+              styleProp={{ top: "0", left: "0" }}
+            />
+            <div className="special-services-outline">
+              {specialServiceData.map((item) => (
+                <SpecialServiceCardComponent data={item} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
+      {pageType === PAGE_TYPE.NEWS ? (
+        <div className="other-service-wrapper">
+          <OtherServicesComponent
+            data={otherServicesData()}
+            pageType={pageType}
+            isDetailPage={true}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

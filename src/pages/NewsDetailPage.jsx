@@ -5,6 +5,7 @@ import FooterComponent from "../components/footer/FooterComponent";
 import HeaderComponent from "../components/header/HeaderComponent";
 import NavigationComponent from "../components/navigation/NavigationComponent";
 import ServiceDetailContainer from "../components/service-detail-page/ServiceDetailContainer";
+import { PAGE_TYPE } from "../constants";
 
 const NewsDetailPage = () => {
   const { newsId } = useParams();
@@ -13,8 +14,8 @@ const NewsDetailPage = () => {
     <>
       <HeaderComponent />
       <NavigationComponent />
-      <AboutUsBanner heading={"Tin Tức Mới Nhất"} subHeading={"News"} />
-      <ServiceDetailContainer id={newsId} />
+      <AboutUsBanner heading={"Thông tin tin tức"} subHeading={"News"} />
+      <ServiceDetailContainer id={newsId} pageType={PAGE_TYPE.NEWS} />
       <FooterComponent />
     </>
   );

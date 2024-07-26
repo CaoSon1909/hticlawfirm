@@ -4,6 +4,7 @@ import FooterComponent from "../components/footer/FooterComponent";
 import HeaderComponent from "../components/header/HeaderComponent";
 import NavigationComponent from "../components/navigation/NavigationComponent";
 import Service02Component from "../components/service02-page/Service02Component";
+import { PAGE_TYPE } from "../constants";
 
 const Service02Page = () => {
   return (
@@ -18,6 +19,7 @@ const Service02Page = () => {
         part1Heading={"Dịch Vụ Nổi Bật"}
         part2Heading={"Các Dịch Vụ Khác"}
         isFlex={false}
+        pageType={PAGE_TYPE.SERVICE}
       />
       <FooterComponent />
     </>

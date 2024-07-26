@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import JapaneseInVietnamPage from './pages/JapaneseInVietnamPage';
 import NewsDetailPage from './pages/NewsDetailPage';
 import NewsPage from './pages/NewsPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 import ProjectPage from './pages/ProjectPage';
 import Service02Page from './pages/Service02Page';
 import ServiceDetailPage from './pages/ServiceDetailPage';
@@ -30,6 +31,7 @@ root.render(
       <Route exact path='/services-02' element={<Service02Page/>} />
       <Route exact path='/services/:serviceId' element={<ServiceDetailPage/>} />
       <Route exact path='/news/:newsId' element={<NewsDetailPage/>} />
+      <Route exact path='/projects/:projectId' element={<ProjectDetailPage/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

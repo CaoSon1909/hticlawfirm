@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { PAGE_TYPE } from "../../constants";
 import "./styles.scss";
 
 const ServiceCardComponent = (props) => {
-  const { data, isNewsPage } = props;
+  const { data, pageType } = props;
+  const [redirectLink, setRedirectLink] = useState("");
+  useEffect(() => {
+    onRedirect();
+  }, []);
+  const onRedirect = () => {
+    if (pageType === PAGE_TYPE.NEWS) {
+      setRedirectLink(`/news/${data.id}`);
+    } else if (pageType === PAGE_TYPE.PROJECT) {
+      setRedirectLink(`/projects/${data.id}`);
+    } else {
+      setRedirectLink(`/services/${data.id}`);
+    }
+  };
   return (
     <div className="service-card-wrapper">
       <div className="service-card-img">
@@ -11,7 +25,7 @@ const ServiceCardComponent = (props) => {
       </div>
       <div className="service-card-content">
         <div>
-          <Link to={isNewsPage ? `/news/${data.id}` : `/services/${data.id}`}>
+          <Link to={redirectLink}>
             <h3>
               {data.title} - {data.id}
             </h3>

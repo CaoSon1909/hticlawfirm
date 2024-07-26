@@ -1,5 +1,6 @@
 import { Input, List, Radio } from "antd";
 import React, { useEffect, useState } from "react";
+import { PAGE_TYPE } from "../../constants";
 import OtherServicesComponent from "../other-services/OtherServicesComponent";
 import SectionHeadingComponent from "../section-heading/SectionHeadingComponent";
 import ServiceCardComponent from "../service-card/ServiceCardComponent";
@@ -30,14 +31,15 @@ const hotServicesData = () => {
   });
 };
 const Service02Component = (props) => {
-  const { part1Heading, part2Heading, isFlex, isNewsPage } = props;
+  const { part1Heading, part2Heading, isFlex, pageType } = props;
+  console.log("service02 - pageType: ", pageType);
   const onSearch = () => {};
   const [initLoading, setInitLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [list, setList] = useState([]);
   const [step, setStep] = useState(2);
-  const [newsStatus, setNewsStatus] = useState("hot-news");
+  const [newsStatus, setNewsStatus] = useState("");
   const [serviceData, setServiceData] = useState([]);
   useEffect(() => {
     // fetch(fakeDataUrl)
@@ -123,7 +125,7 @@ const Service02Component = (props) => {
               dataSource={list}
               renderItem={(item) => (
                 <List.Item>
-                  <ServiceCardComponent data={item} isNewsPage={isNewsPage} />
+                  <ServiceCardComponent data={item} pageType={pageType} />
                 </List.Item>
               )}
             />
@@ -148,7 +150,7 @@ const Service02Component = (props) => {
             ) : (
               <></>
             )}
-            {isNewsPage ? (
+            {pageType === PAGE_TYPE.NEWS ? (
               <div className="radio-btn-news-page">
                 <Radio.Group
                   options={radioOptions}
@@ -161,7 +163,11 @@ const Service02Component = (props) => {
             ) : (
               <></>
             )}
-            <OtherServicesComponent data={serviceData} isFlex={isFlex} />
+            <OtherServicesComponent
+              data={serviceData}
+              isFlex={isFlex}
+              pageType={pageType}
+            />
           </div>
         </div>
       </div>
