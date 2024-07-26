@@ -1,0 +1,31 @@
+.jp-at-vn-outline {
+    width: unset;
+    height: 1400px;
+    background: #F6F8F9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jp-at-vn-wrapper {
+    background: white;
+    width: 1174px;
+    height: 1300px;
+    position: relative;
+}
+.jp-at-vn-page-heading {
+    display: flex;
+    justify-content: space-between;
+}
+.jp-at-vn-page-search-bar {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 365px;
+}
+.question-answer-part {
+    position: absolute;
+    width: 1043px;
+    top: 70%;
+    left: 65px;
+}

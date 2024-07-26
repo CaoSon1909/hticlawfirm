@@ -70,7 +70,6 @@ const ConsultingComponent = () => {
             data={otherServicesData()}
             isFlex={true}
             pageType={PAGE_TYPE.CONSULTING}
-            itemPerPage={itemPerPage}
           />
         </div>
         <div className="bot-consulting-page-heading">
