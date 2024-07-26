@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import ContactPage from './pages/ContactPage';
 import HomePage from "./pages/HomePage";
 import JapaneseInVietnamPage from './pages/JapaneseInVietnamPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 import NewsPage from './pages/NewsPage';
 import ProjectPage from './pages/ProjectPage';
 import Service02Page from './pages/Service02Page';
@@ -28,6 +29,7 @@ root.render(
       <Route exact path='/contact' element={<ContactPage/>} />
       <Route exact path='/services-02' element={<Service02Page/>} />
       <Route exact path='/services/:serviceId' element={<ServiceDetailPage/>} />
+      <Route exact path='/news/:newsId' element={<NewsDetailPage/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

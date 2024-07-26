@@ -1,4 +1,4 @@
-import { Input, List } from "antd";
+import { Input, List, Radio } from "antd";
 import React, { useEffect, useState } from "react";
 import OtherServicesComponent from "../other-services/OtherServicesComponent";
 import SectionHeadingComponent from "../section-heading/SectionHeadingComponent";
@@ -17,15 +17,28 @@ const otherServicesData = () => {
     };
   });
 };
+
+const hotServicesData = () => {
+  return Array.from({ length: 2 }).map((_, i) => {
+    return {
+      id: i,
+      title: `Tin tức mới số ${i}`,
+      publishDate: "18/05/2022",
+      paragraph:
+        "Việc thuê mua nhà ở xã hội là một trong những chính sách hỗ trợ của Nhà nước dành cho các đối tượng có nhu cầu về nhà ở nhưng gặp khó khăn về tài chính. Hãy cùng tìm hiểu chi tiết về khái niệm này và những ai được thuê mua nhà ở xã hội theo quy định của pháp luật. 1. Nhà Ở Xã Hội Là Gì? Theo quy định tại Khoản 7 Điều 3 Luật Nhà ở số 65/2014/QH13 và Luật Nhà ở số 27/2023/QH15, nhà ở xã hội là loại nhà ở có sự hỗ trợ từ...",
+    };
+  });
+};
 const Service02Component = (props) => {
-  const { part1Heading, part2Heading, isFlex } = props;
+  const { part1Heading, part2Heading, isFlex, isNewsPage } = props;
   const onSearch = () => {};
   const [initLoading, setInitLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [list, setList] = useState([]);
   const [step, setStep] = useState(2);
-  console.log("isFlex", isFlex);
+  const [newsStatus, setNewsStatus] = useState("hot-news");
+  const [serviceData, setServiceData] = useState([]);
   useEffect(() => {
     // fetch(fakeDataUrl)
     //   .then((res) => res.json())
@@ -37,7 +50,15 @@ const Service02Component = (props) => {
     setInitLoading(false);
     setData(otherServicesData().slice(0, step));
     setList(otherServicesData().slice(0, step));
+    setServiceData(otherServicesData());
   }, []);
+  useEffect(() => {
+    if (newsStatus === "hot-news") {
+      setServiceData(hotServicesData());
+    } else {
+      setServiceData(otherServicesData());
+    }
+  }, [newsStatus]);
   const onLoadMore = () => {
     setLoading(true);
     setList(
@@ -60,6 +81,21 @@ const Service02Component = (props) => {
     !initLoading && !loading ? (
       <ViewMoreButtonComponent onClick={onLoadMore} />
     ) : null;
+
+  const radioOptions = [
+    {
+      label: "Tin Tức Mới",
+      value: "hot-news",
+    },
+    {
+      label: "Các Tin Tức Khác",
+      value: "other-news",
+    },
+  ];
+
+  const onChangeNews = ({ target: { value } }) => {
+    setNewsStatus(value);
+  };
   return (
     <div className="service02-wrapper">
       <div className="service02-wrapper-content">
@@ -87,7 +123,7 @@ const Service02Component = (props) => {
               dataSource={list}
               renderItem={(item) => (
                 <List.Item>
-                  <ServiceCardComponent data={item} />
+                  <ServiceCardComponent data={item} isNewsPage={isNewsPage} />
                 </List.Item>
               )}
             />
@@ -112,10 +148,20 @@ const Service02Component = (props) => {
             ) : (
               <></>
             )}
-            <OtherServicesComponent
-              data={otherServicesData()}
-              isFlex={isFlex}
-            />
+            {isNewsPage ? (
+              <div className="radio-btn-news-page">
+                <Radio.Group
+                  options={radioOptions}
+                  onChange={onChangeNews}
+                  value={newsStatus}
+                  optionType="button"
+                  buttonStyle="solid"
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+            <OtherServicesComponent data={serviceData} isFlex={isFlex} />
           </div>
         </div>
       </div>

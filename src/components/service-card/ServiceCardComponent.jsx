@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles.scss";
 
 const ServiceCardComponent = (props) => {
-  const { data } = props;
+  const { data, isNewsPage } = props;
   return (
     <div className="service-card-wrapper">
       <div className="service-card-img">
@@ -11,7 +11,7 @@ const ServiceCardComponent = (props) => {
       </div>
       <div className="service-card-content">
         <div>
-          <Link to={`/services/${data.id}`}>
+          <Link to={isNewsPage ? `/news/${data.id}` : `/services/${data.id}`}>
             <h3>
               {data.title} - {data.id}
             </h3>

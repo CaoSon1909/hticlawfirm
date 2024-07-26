@@ -9,26 +9,32 @@ const specialServiceData = [
   {
     id: 1,
     name: "Doanh nghiệp và đầu tư",
+    imgSrc: "/icon/special-service-icon/doanh-nghiep-dau-tu.svg",
   },
   {
     id: 2,
     name: "Pháp lý bất động sản",
+    imgSrc: "/icon/special-service-icon/phap-ly-bat-dong-san.svg",
   },
   {
     id: 3,
     name: "Thuế - Bảo hiểm",
+    imgSrc: "/icon/special-service-icon/thue-bao-hiem.svg",
   },
   {
     id: 4,
     name: "Sở hữu trí tuệ",
+    imgSrc: "/icon/special-service-icon/so-huu-tri-tue.svg",
   },
   {
     id: 5,
     name: "Pháp lý chứng khoán",
+    imgSrc: "/icon/special-service-icon/phap-ly-chung-khoan.svg",
   },
   {
     id: 6,
     name: "Tư vấn giấy phép",
+    imgSrc: "/icon/special-service-icon/tu-van-giay-phep.svg",
   },
 ];
 const otherServicesData = () => {

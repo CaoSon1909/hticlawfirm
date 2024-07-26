@@ -7,10 +7,7 @@ const SpecialServiceCardComponent = (props) => {
     <div>
       <div className="special-service-card-wrapper">
         <div className="special-service-card-img">
-          <img
-            src="/background-image/doanh-nghiep-dau-tu.svg"
-            alt="DN va dau tu"
-          />
+          <img src={data.imgSrc} alt="DN va dau tu" />
         </div>
         <div className="special-service-card-name">{data.name}</div>
         <div className="special-service-card-icon">
