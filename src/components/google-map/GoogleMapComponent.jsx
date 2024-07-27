@@ -12,17 +12,15 @@ const heading = {
   textAlign: "center",
 };
 
-const GoogleMapComponent = () => {
+const GoogleMapComponent = (props) => {
+  const { width, height, isContactPage } = props;
   return (
     <div className="google-map-code">
-      <div style={heading}>BẢN ĐỒ ĐƯỜNG ĐI</div>
+      {isContactPage ? <div style={heading}>BẢN ĐỒ ĐƯỜNG ĐI</div> : <></>}
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.0460928527623!2d106.73683022573967!3d10.714018125357956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175254456fdb369%3A0x16f267ad1d5d2548!2zNDRtIEhvw6BuZyBRdeG7kWMgVmnhu4d0LCBQaMO6IE3hu7ksIFF14bqtbiA3LCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2sus!4v1721378538677!5m2!1sen!2sus"
-        width="263"
-        height="165"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        width={width}
+        height={height}
       ></iframe>
     </div>
   );

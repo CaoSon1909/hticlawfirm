@@ -46,7 +46,7 @@ const FooterComponent = () => {
         </div>
         <div className="rightside-footer">
           <RegisterFormComponent />
-          <GoogleMapComponent />
+          <GoogleMapComponent width="263" height="165" isContactPage={true} />
         </div>
       </div>
     </div>

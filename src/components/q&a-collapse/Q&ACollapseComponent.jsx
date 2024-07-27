@@ -88,6 +88,7 @@ const QuestionAnswerCollapseComponent = () => {
   return (
     <div>
       <Collapse
+        accordion
         items={items}
         expandIconPosition="end"
         expandIcon={({ isActive }) =>
