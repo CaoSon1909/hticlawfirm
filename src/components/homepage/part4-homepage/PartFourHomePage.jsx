@@ -1,6 +1,6 @@
 import { Divider } from "antd";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SectionHeadingComponent from "../../section-heading/SectionHeadingComponent";
 import "./styles.scss";
 
@@ -23,8 +23,9 @@ const headerStyle = {
 
 const PartFourHomePage = ({ isDivider }) => {
   const navigate = useNavigate();
-  const navigateOnClick = () => {
-    navigate("/services-02");
+  const location = {
+    pathname: "/services-02/",
+    hash: "#service02-1",
   };
   return (
     <div className="part4-homepage">
@@ -105,17 +106,19 @@ const PartFourHomePage = ({ isDivider }) => {
           </div>
         </div>
         <div className="btn-wrapper">
-          <button className="btn" onClick={navigateOnClick}>
-            <div className="btn-text">XEM THÊM</div>
-            <div className="btn-next-icon">
-              <img
-                src="/icon/next-icon.svg"
-                alt="next-icon"
-                width="7"
-                height="14"
-              />
-            </div>
-          </button>
+          <Link to={location}>
+            <button className="btn">
+              <div className="btn-text">XEM THÊM</div>
+              <div className="btn-next-icon">
+                <img
+                  src="/icon/next-icon.svg"
+                  alt="next-icon"
+                  width="7"
+                  height="14"
+                />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

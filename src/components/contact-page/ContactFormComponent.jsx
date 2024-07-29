@@ -23,8 +23,14 @@ const ContactFormComponent = () => {
         <Form.Item>
           <Input.TextArea rows={4} placeholder="Nội Dung" />
         </Form.Item>
-        <Form.Item>
-          <Button>Gửi Đi</Button>
+        <Form.Item
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "Center",
+          }}
+        >
+          <Button style={{ width: "100%" }}>Gửi Đi</Button>
         </Form.Item>
       </Form>
     </>

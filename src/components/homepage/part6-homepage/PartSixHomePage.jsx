@@ -10,7 +10,7 @@ const PartSixHomePage = () => {
         <div className="part6-leftside">
           <div className="part6-heading">
             Tư Vấn Pháp Lý
-            <ViewMoreLinkElement />
+            <ViewMoreLinkElement url={"/consults"} />
           </div>
           <div>
             <CardBlogComponent />
@@ -20,7 +20,7 @@ const PartSixHomePage = () => {
         <div className="part6-rightside">
           <div className="part6-heading">
             Góc Doanh Nghiệp Nhật Bản
-            <ViewMoreLinkElement />
+            <ViewMoreLinkElement url={"/japanese-in-vietnam"} />
           </div>
           <div>
             <CardBlogComponent />

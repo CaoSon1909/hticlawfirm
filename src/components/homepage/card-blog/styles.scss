@@ -1,7 +1,7 @@
 .list-item-wrapper {
   border: 1px solid #E3E3E3;
-  width: 490px;
-  height: 161px;
+  width: 546px;
+  height: 162px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -57,7 +57,7 @@
     text-align: left;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
              line-clamp: 4; 
      -webkit-box-orient: vertical;
   }

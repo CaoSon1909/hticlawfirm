@@ -30,7 +30,7 @@ const Part7HomePage = () => {
     <div className="part7-homepage">
       <div className="part7-heading">Tin Tức Mới</div>
       <div className="part7-viewmore">
-        <ViewMoreLinkElement />
+        <ViewMoreLinkElement url="/news" hash={"#service02-1"} />
       </div>
       <div className="hot-news-wrapper">
         <div className="hot-news-list">
